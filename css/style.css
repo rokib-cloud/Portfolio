@@ -76,6 +76,9 @@ section {
     display: flex;
     align-items: center;
     padding: 11%;
+    background: url('/images/home.png') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .home-content {
@@ -103,6 +106,8 @@ section {
 .home-content p {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
+    padding: 10px;
+    word-spacing: 2px;
 }
 
 .btn-box {
@@ -189,10 +194,12 @@ section {
     overflow: hidden;
     transition: .5s;
 }
-.home-sci a:hover{
+
+.home-sci a:hover {
     color: var(--bg-color);
 }
-.home-sci a::before{
+
+.home-sci a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -201,8 +208,25 @@ section {
     height: 100%;
     background: var(--main-color);
     z-index: -1;
+    transition: .5s;
 }
 
-.home-sci a:hover::before{
+.home-sci a:hover::before {
     width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid red;
+    transition: 3s;
+}
+
+.home-imgHover:hover{
+    background: var(--bg-color);
+    opacity: .8;
 }
