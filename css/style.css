@@ -135,6 +135,7 @@ section {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    padding: 20px;
 }
 
 .btn-box .btn:hover {
