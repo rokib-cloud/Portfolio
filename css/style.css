@@ -495,3 +495,77 @@ span {
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
     width: 60%;
 }
+
+.contact{
+    min-height: auto;
+    padding-right: 7rem;
+}
+
+.contact form{
+    min-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin:.8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .text-area-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .text-area-field textarea::placeholder{
+    color: var(--text-color);
+}
+
+.contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background: red;
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:focus~.valid,
+.contact form .text-area-field textarea:focus~.focus,
+.contact form .text-area-field textarea:focus~.valid{
+    width:100%;
+}
+
+.contact form .text-area-field{
+    position: relative;
+    margin: .8rem;
+    display: flex;
+}
+
+.contact form .text-area-field textarea{
+    resize: none;
+}
+
+.contact form .btn-box .btns .btn{
+    cursor: pointer;
+}
